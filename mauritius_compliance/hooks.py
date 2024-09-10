@@ -1,5 +1,5 @@
 app_name = "mauritius_compliance"
-app_title = "MAuritius Compliance"
+app_title = "Mauritius Compliance"
 app_publisher = "Eactive"
 app_description = "Mauritius Compliance"
 app_email = "laxman@eactive.in"
@@ -8,7 +8,7 @@ app_license = "mit"
 # Apps
 # ------------------
 
-# required_apps = []
+required_apps = ['erpnext']
 
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
@@ -242,3 +242,17 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+doc_events = {
+	"Sales Invoice": {
+		"before_save": "mauritius_compliance.mauritius_compliance.controller.set_vat_category"
+	},
+	"Purchase Invoice": {
+		"before_save": "mauritius_compliance.mauritius_compliance.controller.set_vat_category"
+	}
+}
+
+fixtures = [
+    {"dt": 'Custom Field', "filters": [["module", "=", "Mauritius Compliance"]] },
+    {"dt": 'VAT Category'},
+    {"dt": 'Tax Category'}
+]
