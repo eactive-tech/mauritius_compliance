@@ -15,7 +15,9 @@
   "rgt",
   "is_group",
   "old_parent",
-  "parent_vat_category"
+  "parent_vat_category",
+  "tax_category",
+  "item_tax_template"
  ],
  "fields": [
   {
@@ -81,11 +83,28 @@
    "in_list_view": 1,
    "label": "Disabled",
    "reqd": 1
+  },
+  {
+   "fieldname": "tax_category",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Tax Category",
+   "options": "Tax Category",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "tax_category.custom_item_tax_template",
+   "fieldname": "item_tax_template",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Item Tax Template",
+   "options": "Tax Category",
+   "reqd": 1
   }
  ],
  "is_tree": 1,
  "links": [],
- "modified": "2024-09-10 16:04:07.946023",
+ "modified": "2025-04-03 10:55:52.192036",
  "modified_by": "Administrator",
  "module": "Mauritius Compliance",
  "name": "VAT Category",

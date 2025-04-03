@@ -1,0 +1,24 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Sales Invoice",
+  "enabled": 1,
+  "modified": "2025-04-03 12:00:47.461078",
+  "module": null,
+  "name": "Sales Invoice",
+  "script": "frappe.ui.form.on('Sales Invoice', {\n\tcustom_vat_category: function(frm) {\n        update_child_vat_category(frm);\n    }\n})\n\n\nfrappe.ui.form.on('Sales Invoice Item', {\n    custom_vat_category: function(frm, cdt, cdn) {\n        let row = locals[cdt][cdn];\n        \n        if (row.custom_vat_category) {\n            frappe.db.get_value('VAT Category', row.custom_vat_category, 'item_tax_template', (data) => {\n                if (data && data.item_tax_template) {\n                    frappe.model.set_value(cdt, cdn, 'item_tax_template', data.item_tax_template);\n                }\n            });\n        }\n    },\n    \n    item_code: function(frm, cdt, cdn) {\n\n        let row = locals[cdt][cdn];\n        if (frm.doc.custom_vat_category) {\n            frappe.model.set_value(cdt, cdn, 'custom_vat_category', frm.doc.custom_vat_category);\n        }else {\n            frappe.db.get_value('Item', row.item_code, 'custom_output_vat_category', (data) => {\n                if (data && data.custom_output_vat_category) {\n                    frappe.model.set_value(cdt, cdn, 'custom_vat_category', data.custom_output_vat_category);\n                }\n            });\n\n        }\n    }\n});",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Purchase Invoice",
+  "enabled": 1,
+  "modified": "2025-04-03 12:14:28.775634",
+  "module": null,
+  "name": "Purchase Invoice",
+  "script": "frappe.ui.form.on('Purchase Invoice', {\n\tcustom_vat_category: function(frm) {\n        update_child_vat_category(frm);\n    }\n})\n\n\nfrappe.ui.form.on('Purchase Invoice Item', {\n    custom_vat_category: function(frm, cdt, cdn) {\n        let row = locals[cdt][cdn];\n        \n        if (row.custom_vat_category) {\n            frappe.db.get_value('VAT Category', row.custom_vat_category, 'item_tax_template', (data) => {\n                if (data && data.item_tax_template) {\n                    frappe.model.set_value(cdt, cdn, 'item_tax_template', data.item_tax_template);\n                }\n            });\n        }\n    },\n    \n    item_code: function(frm, cdt, cdn) {\n\n        let row = locals[cdt][cdn];\n        if (frm.doc.custom_vat_category) {\n            frappe.model.set_value(cdt, cdn, 'custom_vat_category', frm.doc.custom_vat_category);\n        }else {\n            frappe.db.get_value('Item', row.item_code, 'custom_output_vat_category', (data) => {\n                if (data && data.custom_output_vat_category) {\n                    frappe.model.set_value(cdt, cdn, 'custom_vat_category', data.custom_output_vat_category);\n                }\n            });\n\n        }\n    }\n});",
+  "view": "Form"
+ }
+]

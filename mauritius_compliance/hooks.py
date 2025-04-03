@@ -242,17 +242,20 @@ required_apps = ['erpnext']
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
-doc_events = {
-	"Sales Invoice": {
-		"before_save": "mauritius_compliance.mauritius_compliance.controller.set_vat_category"
-	},
-	"Purchase Invoice": {
-		"before_save": "mauritius_compliance.mauritius_compliance.controller.set_vat_category"
-	}
-}
+# doc_events = {
+# 	"Sales Invoice": {
+# 		"before_save": "mauritius_compliance.mauritius_compliance.controller.set_vat_category"
+# 	},
+# 	"Purchase Invoice": {
+# 		"before_save": "mauritius_compliance.mauritius_compliance.controller.set_vat_category"
+# 	}
+# }
 
 fixtures = [
     {"dt": 'Custom Field', "filters": [["module", "=", "Mauritius Compliance"]] },
     {"dt": 'VAT Category'},
-    {"dt": 'Tax Category'}
+    {"dt": 'Tax Category'},
+    {"dt": 'Item Tax Template'},
+    {"dt": 'Client Script'},
+    {"dt": 'Property Setter', "filters": [["module", "=", "Mauritius Compliance"]] }
 ]

@@ -6,10 +6,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 1,
+  "item_tax_template": null,
   "modified": "2024-09-10 12:40:17.082936",
   "name": "All Vat Categories",
   "old_parent": "",
-  "parent_vat_category": null
+  "parent_vat_category": null,
+  "tax_category": null
  },
  {
   "category_name": "Output",
@@ -18,10 +20,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 1,
+  "item_tax_template": null,
   "modified": "2024-09-10 12:40:42.975011",
   "name": "Output",
   "old_parent": "All Vat Categories",
-  "parent_vat_category": "All Vat Categories"
+  "parent_vat_category": "All Vat Categories",
+  "tax_category": null
  },
  {
   "category_name": "Input",
@@ -30,10 +34,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 1,
+  "item_tax_template": null,
   "modified": "2024-09-10 12:40:52.061367",
   "name": "Input",
   "old_parent": "All Vat Categories",
-  "parent_vat_category": "All Vat Categories"
+  "parent_vat_category": "All Vat Categories",
+  "tax_category": null
  },
  {
   "category_name": "1 Taxable Supplies",
@@ -42,10 +48,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 1,
-  "modified": "2024-09-10 16:15:55.473905",
+  "item_tax_template": "Mauritius Tax - W",
+  "modified": "2025-04-03 10:27:10.430272",
   "name": "1 Taxable Supplies",
   "old_parent": "Output",
-  "parent_vat_category": "Output"
+  "parent_vat_category": "Output",
+  "tax_category": "Taxable"
  },
  {
   "category_name": "2 Deferred Vat On Importation",
@@ -54,10 +62,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 1,
+  "item_tax_template": null,
   "modified": "2024-09-10 16:15:55.568008",
   "name": "2 Deferred Vat On Importation",
   "old_parent": "Output",
-  "parent_vat_category": "Output"
+  "parent_vat_category": "Output",
+  "tax_category": null
  },
  {
   "category_name": "6 Taxable Input On Which Input Tax Is Allowed As A Credit",
@@ -66,10 +76,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 1,
+  "item_tax_template": null,
   "modified": "2024-09-10 16:15:55.616456",
   "name": "6 Taxable Input On Which Input Tax Is Allowed As A Credit",
   "old_parent": "Input",
-  "parent_vat_category": "Input"
+  "parent_vat_category": "Input",
+  "tax_category": null
  },
  {
   "category_name": "7 Taxable Input On Which No Input Tax Is Allowed As A Credit",
@@ -78,10 +90,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 1,
+  "item_tax_template": null,
   "modified": "2024-09-10 16:15:55.659272",
   "name": "7 Taxable Input On Which No Input Tax Is Allowed As A Credit",
   "old_parent": "Input",
-  "parent_vat_category": "Input"
+  "parent_vat_category": "Input",
+  "tax_category": null
  },
  {
   "category_name": "8 Exempt Input",
@@ -90,10 +104,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 1,
+  "item_tax_template": null,
   "modified": "2024-09-10 16:15:55.706935",
   "name": "8 Exempt Input",
   "old_parent": "Input",
-  "parent_vat_category": "Input"
+  "parent_vat_category": "Input",
+  "tax_category": null
  },
  {
   "category_name": "1.1 Zero-Rated Supplies (Exports",
@@ -102,10 +118,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 0,
-  "modified": "2024-09-10 16:16:32.013412",
+  "item_tax_template": "Zero Rated Tax - W",
+  "modified": "2025-04-03 10:25:09.325206",
   "name": "1.1 Zero-Rated Supplies (Exports",
   "old_parent": "1 Taxable Supplies",
-  "parent_vat_category": "1 Taxable Supplies"
+  "parent_vat_category": "1 Taxable Supplies",
+  "tax_category": "Zero Rated"
  },
  {
   "category_name": "1.2 Zero-Rated Supplies Other Than Exports",
@@ -114,10 +132,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 0,
-  "modified": "2024-09-10 16:16:32.117454",
+  "item_tax_template": "Zero Rated Tax - W",
+  "modified": "2025-04-03 10:25:40.880718",
   "name": "1.2 Zero-Rated Supplies Other Than Exports",
   "old_parent": "1 Taxable Supplies",
-  "parent_vat_category": "1 Taxable Supplies"
+  "parent_vat_category": "1 Taxable Supplies",
+  "tax_category": "Zero Rated"
  },
  {
   "category_name": "1.3 Taxable Supplies Made To Exempt Bodies Or Persons",
@@ -126,10 +146,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 0,
-  "modified": "2024-09-10 16:16:32.198773",
+  "item_tax_template": "Mauritius Tax - W",
+  "modified": "2025-04-03 10:25:46.808620",
   "name": "1.3 Taxable Supplies Made To Exempt Bodies Or Persons",
   "old_parent": "1 Taxable Supplies",
-  "parent_vat_category": "1 Taxable Supplies"
+  "parent_vat_category": "1 Taxable Supplies",
+  "tax_category": "Taxable"
  },
  {
   "category_name": "1.4 Other Taxable Supplies",
@@ -138,10 +160,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 0,
-  "modified": "2024-09-10 16:16:32.280129",
+  "item_tax_template": "Mauritius Tax - W",
+  "modified": "2025-04-03 10:25:04.220931",
   "name": "1.4 Other Taxable Supplies",
   "old_parent": "1 Taxable Supplies",
-  "parent_vat_category": "1 Taxable Supplies"
+  "parent_vat_category": "1 Taxable Supplies",
+  "tax_category": "Taxable"
  },
  {
   "category_name": "3 Exempt Supplies",
@@ -150,10 +174,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 0,
-  "modified": "2024-09-10 16:16:32.387150",
+  "item_tax_template": "Exempted - W",
+  "modified": "2025-04-03 10:25:51.860571",
   "name": "3 Exempt Supplies",
   "old_parent": "Output",
-  "parent_vat_category": "Output"
+  "parent_vat_category": "Output",
+  "tax_category": "Exempt"
  },
  {
   "category_name": "6.1 Capital Goods Imported",
@@ -162,10 +188,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 0,
+  "item_tax_template": null,
   "modified": "2024-09-10 16:16:32.519222",
   "name": "6.1 Capital Goods Imported",
   "old_parent": "6 Taxable Input On Which Input Tax Is Allowed As A Credit",
-  "parent_vat_category": "6 Taxable Input On Which Input Tax Is Allowed As A Credit"
+  "parent_vat_category": "6 Taxable Input On Which Input Tax Is Allowed As A Credit",
+  "tax_category": null
  },
  {
   "category_name": "6.2 Zero-Rated Imports",
@@ -174,10 +202,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 0,
-  "modified": "2024-09-10 16:16:32.586989",
+  "item_tax_template": "Zero Rated Tax - W",
+  "modified": "2025-04-03 10:25:55.114786",
   "name": "6.2 Zero-Rated Imports",
   "old_parent": "6 Taxable Input On Which Input Tax Is Allowed As A Credit",
-  "parent_vat_category": "6 Taxable Input On Which Input Tax Is Allowed As A Credit"
+  "parent_vat_category": "6 Taxable Input On Which Input Tax Is Allowed As A Credit",
+  "tax_category": "Zero Rated"
  },
  {
   "category_name": "6.3 Other Imports",
@@ -186,10 +216,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 0,
+  "item_tax_template": null,
   "modified": "2024-09-10 16:16:32.667441",
   "name": "6.3 Other Imports",
   "old_parent": "6 Taxable Input On Which Input Tax Is Allowed As A Credit",
-  "parent_vat_category": "6 Taxable Input On Which Input Tax Is Allowed As A Credit"
+  "parent_vat_category": "6 Taxable Input On Which Input Tax Is Allowed As A Credit",
+  "tax_category": null
  },
  {
   "category_name": "6.4 Capital Goods Purchased Locally",
@@ -198,10 +230,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 0,
+  "item_tax_template": null,
   "modified": "2024-09-10 16:16:32.774280",
   "name": "6.4 Capital Goods Purchased Locally",
   "old_parent": "6 Taxable Input On Which Input Tax Is Allowed As A Credit",
-  "parent_vat_category": "6 Taxable Input On Which Input Tax Is Allowed As A Credit"
+  "parent_vat_category": "6 Taxable Input On Which Input Tax Is Allowed As A Credit",
+  "tax_category": null
  },
  {
   "category_name": "6.5 Zero-Rated Goods And Services Purchased Locally",
@@ -210,10 +244,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 0,
-  "modified": "2024-09-10 16:16:32.883562",
+  "item_tax_template": "Zero Rated Tax - W",
+  "modified": "2025-04-03 10:26:15.842447",
   "name": "6.5 Zero-Rated Goods And Services Purchased Locally",
   "old_parent": "6 Taxable Input On Which Input Tax Is Allowed As A Credit",
-  "parent_vat_category": "6 Taxable Input On Which Input Tax Is Allowed As A Credit"
+  "parent_vat_category": "6 Taxable Input On Which Input Tax Is Allowed As A Credit",
+  "tax_category": "Zero Rated"
  },
  {
   "category_name": "6.6 Other Goods And Services Purchased Locally",
@@ -222,10 +258,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 0,
+  "item_tax_template": null,
   "modified": "2024-09-10 16:16:32.980722",
   "name": "6.6 Other Goods And Services Purchased Locally",
   "old_parent": "6 Taxable Input On Which Input Tax Is Allowed As A Credit",
-  "parent_vat_category": "6 Taxable Input On Which Input Tax Is Allowed As A Credit"
+  "parent_vat_category": "6 Taxable Input On Which Input Tax Is Allowed As A Credit",
+  "tax_category": null
  },
  {
   "category_name": "8.1 Imported Goods",
@@ -234,10 +272,12 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 0,
-  "modified": "2024-09-10 16:16:33.078134",
+  "item_tax_template": "Exempted - W",
+  "modified": "2025-04-03 10:25:25.397564",
   "name": "8.1 Imported Goods",
   "old_parent": "8 Exempt Input",
-  "parent_vat_category": "8 Exempt Input"
+  "parent_vat_category": "8 Exempt Input",
+  "tax_category": "Exempt"
  },
  {
   "category_name": "8.2 Goods And Services Purchased Locally",
@@ -246,9 +286,11 @@
   "docstatus": 0,
   "doctype": "VAT Category",
   "is_group": 0,
-  "modified": "2024-09-10 16:16:33.189469",
+  "item_tax_template": "Mauritius Tax - W",
+  "modified": "2025-04-03 10:25:20.812449",
   "name": "8.2 Goods And Services Purchased Locally",
   "old_parent": "8 Exempt Input",
-  "parent_vat_category": "8 Exempt Input"
+  "parent_vat_category": "8 Exempt Input",
+  "tax_category": "Taxable"
  }
 ]
