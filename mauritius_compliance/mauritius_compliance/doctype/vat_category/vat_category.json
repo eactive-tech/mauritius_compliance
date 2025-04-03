@@ -97,13 +97,12 @@
    "fieldtype": "Link",
    "ignore_user_permissions": 1,
    "label": "Item Tax Template",
-   "options": "Tax Category",
-   "reqd": 1
+   "options": "Tax Category"
   }
  ],
  "is_tree": 1,
  "links": [],
- "modified": "2025-04-03 12:49:43.036195",
+ "modified": "2025-04-03 14:25:12.087002",
  "modified_by": "Administrator",
  "module": "Mauritius Compliance",
  "name": "VAT Category",
